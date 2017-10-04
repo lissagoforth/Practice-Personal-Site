@@ -1,8 +1,8 @@
 #intro {
-    font-size: 2em;
+    font-size: 3em;
 }
 
 .article {
-    border: 1px solid gray;
+    border: 1px solid #ffdead;
     color: aqua
 }
