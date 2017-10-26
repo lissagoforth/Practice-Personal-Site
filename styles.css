@@ -1,8 +1,64 @@
-/* #intro {
-    font-size: 3em;
+html {
+    background-color: rgba(85, 156, 173, 0.6);
+    font-family: 'Pontano Sans', sans-serif;
+}
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    margin: 0 auto;
+    padding: 5px;
+    width: 100%;
+    background-color: white;
+    text-align: center; 
 }
 
-.article {
-    border: 5px dotted #ffdead;
-    color: aqua;
-} */
+.main {
+    margin: 50px 0;
+    color: white;
+    letter-spacing: .05em;
+}
+
+.hidden {
+    display: none;
+}
+
+.navList {
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    display: inline;
+}
+
+.navList__link {
+    display: inline;
+    list-style: none;
+    text-decoration: none;    
+}
+
+a.navList__link {
+    display: inline;
+    list-style: none;
+    text-decoration: none;    
+}
+
+.navList__link:first-child {
+    margin: 0 20px 0 0;
+}
+
+.navList__link:not(:first-child) {
+    margin: 0 20px;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: block;
+    text-align: center;
+    margin: 0;
+    padding: 5px;
+    width: 100%;
+    background-color: white;
+}
