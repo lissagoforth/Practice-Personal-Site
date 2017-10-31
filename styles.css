@@ -2,6 +2,9 @@ html {
     background-color: rgba(85, 156, 173, 0.6);
     font-family: 'Pontano Sans', sans-serif;
 }
+a {
+    text-decoration: none;
+}
 .nav {
     position: fixed;
     top: 0;
@@ -37,12 +40,6 @@ html {
     text-decoration: none;    
 }
 
-a.navList__link {
-    display: inline;
-    list-style: none;
-    text-decoration: none;    
-}
-
 .navList__link:first-child {
     margin: 0 20px 0 0;
 }
@@ -61,4 +58,35 @@ a.navList__link {
     padding: 5px;
     width: 100%;
     background-color: white;
+}
+
+.main__blog {
+    text-align: center;
+}
+
+.main__blog__title,
+.main__blog__entry,
+.main__blog__tags {
+    width: 75%;
+    border-radius: 5px;
+}
+
+.main__blog__entry {
+    height: 100px;
+}
+
+.main__blog__article {
+    text-align: left;
+}
+
+.newBlogArticle {
+    border: solid 1px black;
+    padding: 25px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 5px;
+    color: black;
+    max-height: 150px;
+    overflow: auto;
+    font-size: 12px;
 }

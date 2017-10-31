@@ -6,9 +6,11 @@ let contact = {
     "linkedin" : "TBD",
     "github" : "https://github.com/lissagoforth"
 }
+
 // send contact info to local storage
 contactString = JSON.stringify(contact)
 localStorage.setItem("contact", contactString)
+
 // resume/cv
 const panera = {
     "name" : "Panera Bread",
@@ -45,6 +47,7 @@ const tavern = {
     "duration" : "From 06/17 to Present",
     "responsibilities" : "FILLER TEXTFILLER TEXTFILLER TEXTFILLER TEXTFILLER TEXTFILLER TEXT"
 }
+
 // Create work history database
 let workHistory = []
 
@@ -53,6 +56,7 @@ workHistory.push(fourOneSevenUnion)
 workHistory.push(meltingPot)
 workHistory.push(bMcNeels)
 workHistory.push(panera)
+
 // send work history to local storage
 const workHistoryString = JSON.stringify(workHistory)
 localStorage.setItem("workHistory", workHistoryString)
@@ -66,4 +70,8 @@ const projects = {
 }
 projectsString = JSON.stringify(projects)
 localStorage.setItem("projects", projectsString)
+
 // blog articles
+let blogArticles = JSON.parse(localStorage.getItem("blogArticles")) || [] 
+// unique ID generator
+

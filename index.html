@@ -81,11 +81,24 @@
     </section>
 
     <section id="blog" class="main hidden">
-        <header>
+        <header class="main__blog">
           <h1>Blog</h1>
         </header>
         <section class="main__blog">
-          <!-- get from factory -->
+            <form class="main__blog__form" id="blogForm">
+              Title: <br>
+              <input type="text" name="title" id= "blogTitle" class="main__blog__title" placeholder="Blog entry title"><br>
+              Entry: <br>
+              <textarea placeholder="Talk about school here" id="blogEntry" class="main__blog__entry"></textarea><br>
+              Tags: <br>
+              <input type="text" name="tags" id="blogTags" class="main__blog__tags"><br>
+              Date: <br>
+              <input type="date" name="published" id="blogDate">
+            </form>
+            <button type="button" name="save" id="postBtn">Post</button>
+            <section class="main__blog__article" id="blogArticle">
+
+            </section>
         </section>
     </section>
 
@@ -100,8 +113,8 @@
 
     <footer class="footer">Copyright &copy; 2017 Lissa Goforth</footer>
 
-    <script src="./scripts/personalSiteController.js"></script>
-    <script src="./scripts/personalSiteFactory.js"></script>
     <script src="./scripts/personalSiteNav.js"></script>
+    <script src="./scripts/personalSiteFactory.js"></script>
+    <script src="./scripts/personalSiteController.js"></script>
 </body>
 </html>
