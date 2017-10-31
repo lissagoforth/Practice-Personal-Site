@@ -103,18 +103,20 @@ buttonEl.addEventListener("click", function(event) {
   //push to blogArticle array
   blogArticles.unshift(blogObject)
 
+  // resets form upon clicking post button
+  form.reset()
 
-//storeArticles(blogArticles)
+})
 
+function storeArticles(blogArticles) {
+  
   //stringify and add to local storage
   const blogString = JSON.stringify(blogArticles)
   localStorage.setItem("blogArticles", blogString)
+ 
   //add to DOM
   addBlogArticle()
-
-  // resets form upon clicking post button
-  form.reset();
-})
+}
 
 // When the user clicks the Delete button, the containing article, and no other articles, 
 // should then be removed from the DOM. 
@@ -124,12 +126,42 @@ deleteBtn.addEventListener("click", function(event) {
     let uniqueId = event.target.id.split("_")[1]
     let parent = document.getElementById("blogArticle")
     let child = document.getElementById(`blog_${uniqueId}`)
-    parent.removeChild(child);
-    // add functionality to remove from blogArticle array   
+    parent.removeChild(child);  
   }
 
 })
 //add sepreate button to clean out test blog articles
-removeBlogArticle = blogArticles.filter(function(el) {
-  return el.title !== "test" || "trash";
-  //storeArticles(removeBlogArticle)
+// cleanBtn.addEventListener("click", function(event) {
+  
+//   removeBlogArticle = blogArticles.filter(function(el) {
+//     return el.title !== "test" || "trash";
+//     console.log(removeBlogArticle)
+
+//     // save to local storage
+//     storeArticles(removeBlogArticle)
+
+//   })
+// })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

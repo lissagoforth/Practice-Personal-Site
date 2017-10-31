@@ -90,3 +90,12 @@ a {
     overflow: auto;
     font-size: 12px;
 }
+
+ul {
+    list-style: none;
+}
+
+li {
+    display: inline;
+    margin-left: 20px;
+}
