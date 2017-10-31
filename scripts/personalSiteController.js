@@ -103,6 +103,9 @@ buttonEl.addEventListener("click", function(event) {
   //push to blogArticle array
   blogArticles.unshift(blogObject)
 
+
+//storeArticles(blogArticles)
+
   //stringify and add to local storage
   const blogString = JSON.stringify(blogArticles)
   localStorage.setItem("blogArticles", blogString)
@@ -124,8 +127,9 @@ deleteBtn.addEventListener("click", function(event) {
     parent.removeChild(child);
     // add functionality to remove from blogArticle array   
   }
-//   removeBlogArticle = blogArticles.filter(function(el) {
-//     return el.title !== "test" || "trash";
-//     blogArticles.unshift
-// });
+
 })
+//add sepreate button to clean out test blog articles
+removeBlogArticle = blogArticles.filter(function(el) {
+  return el.title !== "test" || "trash";
+  //storeArticles(removeBlogArticle)
