@@ -124,5 +124,8 @@ deleteBtn.addEventListener("click", function(event) {
     parent.removeChild(child);
     // add functionality to remove from blogArticle array   
   }
-  
+//   removeBlogArticle = blogArticles.filter(function(el) {
+//     return el.title !== "test" || "trash";
+//     blogArticles.unshift
+// });
 })
