@@ -1,5 +1,5 @@
 // Add pagination element
-const totalItems = blogArticles.length
+let totalItems = blogArticles.length
 const itemsPerPage = 5
 const numberOfPages = Math.ceil(totalItems / itemsPerPage)
 const paginationEl = document.getElementById("paginator")
@@ -77,7 +77,7 @@ function blogPageMaker (event) {
     blogEl.innerHTML += `
     <article class="newBlogArticle" id="blog_${currentBlogArticle.id}"><strong>${currentBlogArticle.title}</strong><br>
     ${currentBlogArticle.body} <br> <strong>Tags: ${currentBlogArticle.tags}</strong> <br> <strong>Published: ${currentBlogArticle.published}</strong><br>
-    <button id="delete_${currentBlogArticle.id}">Delete</button>
+    <button id="delete_${currentBlogArticle.id}">Delete</button><button id="edit_${currentBlogArticle.id}">Edit</button>
     </article>
     `
    }
