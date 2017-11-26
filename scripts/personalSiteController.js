@@ -1,6 +1,6 @@
 //Pull contact info from local storage
-const Contact = JSON.parse(localStorage.getItem("contact"))
-const contactElement = document.getElementsByClassName("main__contact")[0]
+const Contact = JSON.parse(localStorage.getItem('contact'))
+const contactElement = document.getElementsByClassName('main__contact')[0]
 
 // write contact info to html from local storage
 contactElement.innerHTML = `
@@ -11,13 +11,13 @@ contactElement.innerHTML = `
 <h4 class=github>GitHub: ${Contact['github']}</h4>
 `
 //Pull work history form local storage
-const WorkHistory = JSON.parse(localStorage.getItem("workHistory"))
+const WorkHistory = JSON.parse(localStorage.getItem('workHistory'))
 const jobElement = document.getElementsByClassName('main__workHistory')[0]
 
 // name phone duration responsibilites address
 for (let i = 0; i < WorkHistory.length; i++) {
-        let element = WorkHistory[i];
-        jobElement.innerHTML += `
+    let element = WorkHistory[i]
+    jobElement.innerHTML += `
         <section><h3>${element.name}</h3>
         <p><strong>Address: </strong>${element.address}</p>
         <p><strong>Phone: </strong>${element.phone}</p>
@@ -25,12 +25,12 @@ for (let i = 0; i < WorkHistory.length; i++) {
         <p><strong>Responsibilities: </strong>${element.responsibilities}</p>
         </section> 
         `
-    }     
+}     
 
 //Pull projects from local storage
 //refactor after projects object is changed to an array
-const Projects = JSON.parse(localStorage.getItem("projects"))
-const projectEl = document.getElementsByClassName("main__portfolio")[0]
+const Projects = JSON.parse(localStorage.getItem('projects'))
+const projectEl = document.getElementsByClassName('main__portfolio')[0]
 
 //Write portfolio to html
 projectEl.innerHTML = `

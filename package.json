@@ -1,0 +1,36 @@
+{
+  "name": "lissagoforth.github.io",
+  "version": "1.0.0",
+  "description": "Single page configuration of personal site",
+  "main": "index.js",
+  "dependencies": {
+    "eslint-grunt": "^1.0.0"
+  },
+  "devDependencies": {
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-grunt": "^1.0.0",
+    "eslint-plugin-import": "^2.8.0",
+    "grunt": "^1.0.1",
+    "grunt-contrib-uglify": "git://github.com/gruntjs/grunt-contrib-uglify.git#harmony",
+    "grunt-contrib-watch": "^1.0.0",
+    "gruntify-eslint": "^4.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lissagoforth/lissagoforth.github.io.git"
+  },
+  "keywords": [
+    "single",
+    "page",
+    "config"
+  ],
+  "author": "Lissa Goforth",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lissagoforth/lissagoforth.github.io/issues"
+  },
+  "homepage": "https://github.com/lissagoforth/lissagoforth.github.io#readme"
+}
